@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ingrid Yang Final</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Anton|Pacifico|Sigmar+One|Unica+One|VT323');
+    .movement {
+        width: 150px;
+        height: 50px;
+        color: blue;
+        animation: low 2s infinite alternate;
+    }
+
+    /* Standard syntax */
+    @keyframes low{
+      0% {color: yellow; line-height: 150px;}
+      100% {color: green; line-height: 100px;}
+    }
+
+    .movementtwo {
+        width: 150px;
+        height: 50px;
+        color: blue;
+        animation: minority 1s infinite alternate;
+    }
+
+    /* Standard syntax */
+    @keyframes minority{
+      0% {color: yellow; line-height: 170px;}
+      100% {color: green; line-height: 40px;}
+    }
+
+    .movementthree{
+      width: 150px;
+      height: 50px;
+      color: red;
+      animation: strengthened 2s infinite alternate;
+    }
+
+    /* Stanard Syntax */
+    @keyframes strengthened{
+      0% {color: black; font-size: 10px}
+      100% {color: red; font-size: 50px}
+    }
+
+    body{
+      background-color: yellow;
+      overflow-x: hidden;
+      }
+
+    div.popularity{
+      font-family: 'VT323', monospace;
+      font-size: 650px;
+      text-transform:uppercase;
+      letter-spacing: 5px;
+      max-width: 200px;
+      top: 50px;
+      left: 20px;
+      position: fixed;
+      line-height: 400px;
+      z-index: 9;
+      animation: popularity 2s infinite alternate;
+    }
+
+    /* Standard Syntax */
+    @keyframes popularity{
+    0% {color: black;}
+    50% {text-decoration: line-through;}
+    75% {text-decoration: underline;}
+    80% {text-decoration:red overline;}
+    100% {color: black}
+    }
+
+    div.partone{
+      font-family: 'Anton', sans-serif;
+      color: #8000ff;
+      font-size: 30px;
+      letter-spacing: 20px;
+      margin-left: 300px;
+      padding-left: 300px;
+      max-width: 1000px;
+    }
+
+    div.parttwo{
+      font-family: 'Space Mono', monospace;
+      color: pink;
+      font-weight: 20px;
+      font-size: 40px;
+      padding-top: 30px;
+      padding-bottom: 110px;
+      padding-left: 200px;
+      margin-top: 80px;
+      z-index: 10;
+      border: solid white 10px;
+      border-radius: 60px;
+      }
+
+    div.partthree{
+      font-family: 'Space Mono', monospace;
+      color: green;
+      font-size: 30px;
+      padding-left: 700px;
+      margin-left: 200px;
+      margin-top: 90px;
+      padding-top: 50px
+  }
+
+    div.partfour{
+      font-family: 'Unica One', cursive;
+      color: blue;
+      font-size: 40px;
+      padding-left: 80px;
+      padding-bottom: 70px;
+    }
+
+    div.partfive{
+      font-family: 'Space Mono', monospace;
+      font-size: 30px;
+      color: gray;
+      padding-left: 200px;
+      padding-bottom: 40px;
+      z-index: 11;
+      border: solid orange 10px;
+    }
+
+    .hovertag1 {
+      z-index:9;
+      position: relative;
+    }
+
+    .hovertag1:hover {
+      color:blue;
+      text-decoration: line-through;
+    }
+
+    .hovertag2:hover {
+      color: red;
+      font-size: 60px;
+      transition: 2s
+    }
+
+    .hovertag3:hover {
+      color: purple;
+      transition: 1s;
+      font-size: 80px;
+    }
+
+    .partone, .parttwo, .partthree, .partfour, .partfive {
+      position:relative;
+    }
+
+    .bigtext{
+      font-size: 200px
+    }
+
+    .stream {
+      z-index:12;
+      font-size: 100px;
+      color: brown;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      position: relative;
+      animation: stream 2s infinite alternate;
+    }
+
+    /* Stanard Syntax */
+    @keyframes stream{
+      0% {color: yellow;}
+      10% {color: white; }
+      30% {color: black; text-align:center;}
+      60% {color: yellow;}
+      80% {color: green;}
+      100% {color: yellow;
+    }
+
+    .movementfour{
+      width: 150px;
+      height: 50px;
+      color: red;
+      animation: status 0.10s infinite alternate;
+    }
+
+    /* Stanard Syntax */
+    @keyframes status{
+      0% {color: pink;}
+      100% {color: blue;}
+    }
+
+
+  @-webkit-keyframes fade-in{ from{
+    opacity: 2;
+    top: 0px;
+  }
+    to{
+      opacity: 0;
+      top:-10px;
+    }
+  }
+
+  .text-animated-one {
+    display: inline;
+    position: relative;
+    top: 0px;
+    -webkit-animation:fade-in 3s infinite;
+    font-size: 50px
+  }
+  .text-animated-two {
+    opacity: 0;
+    display: inline;
+    position: relative;
+    margin-left: -56px;
+    -webkit-animation:fade-in 3s infinite;
+    -webkit-animation-delay: 0.5s;
+    font-size: 50px;
+  }
+
+  .aggettivi{
+    display: inline;
+    width: 100px;
+    height: 100px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="popularity">Popula<br> &nbsp;rity</div>
+
+  <div class="partone"><div class="movement">low</div>-quality goods are <div class='hovertag1'>doomed</div> </strong> to failure. Nobody gets upset when a <em> quiet</em> Brooklyn cafe with <strong>bad</strong>
+  lattes <br> and <br> <strong> rude</strong> servers <br> goes out of business.
+  <br> <br> But opinions are not the same as material <em>goods</em> or <em>services
+  </em>. <br> <br> They won’t <strong>disappear</strong> if they are unpopular
+  or even bad. <br> <br> <br> <br> </div>
+
+  <div class="parttwo"><br> <br><div class="movementfour">status</div> has only
+  <div class="movementthree"<strong> &nbsp; &nbsp; &nbsp;strengthened</strong></div> <br> <br>them.
+  <div class="movementtwo">Minority</div> views are radicalized when they can’t be
+  <em>expressed</em> and recognized.</div>
+
+  <div class="partthree"><br> Today the <div class="stream">Stream </div> is digital media’s &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; dominant &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; form of <br> organizing
+  <br> information.<br> <br> <div class="stream"><div class="bigtext">Stream.</div></div></div>
+
+  <div class="partfour"><br><br> we see news websites organize their <storng>entire</strong> content based on the
+  same principles. </div>
+
+  <div class="partfive"><br> <br> The prominence <br> &nbsp; of <br> &nbsp; &nbsp; &nbsp;
+  &nbsp; the <br> &nbsp; <div class="stream">Stream </div> <br> <br> today doesn’t just make vast <br> chunks
+  of the Internet biased against quality — it also means a <storng> deep
+  betrayal </strong> to the diversity that the world wide web had originally
+  <br> <br> <br> <div class="text-animated-one"><div class="text-animated-two">
+  <em>envisioned.</em></div></div></div>
+
+</body>
+</html>
