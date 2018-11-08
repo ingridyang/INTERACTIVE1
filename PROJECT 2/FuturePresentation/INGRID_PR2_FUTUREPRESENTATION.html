@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Ingrid Yang Zoom</title>
+
+<!--This imports the jquery libary from Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--Jquery goes here-->
+<script>
+
+$(document).ready(function() {
+
+	var s = $("body");
+
+	$(window).scroll(function() {
+
+		var windowpos = $(window).scrollTop();
+		if (windowpos <=600) {
+      s.addClass("bg1");
+
+      s.removeClass("bg2");
+      s.removeClass("bg3");
+      s.removeClass("bg4");
+      s.removeClass("bg5");
+		}
+
+    else if (windowpos >= 601 && windowpos <=1200) {
+      s.addClass("bg2");
+      $('h1').removeClass('showtext');
+
+      s.removeClass("bg1");
+      s.removeClass("bg3");
+      s.removeClass("bg4");
+      s.removeClass("bg5");
+    }
+
+    else if (windowpos >= 1201 && windowpos <=1800) {
+      s.addClass("bg3");
+      $('h1').addClass('showtext');
+
+      s.removeClass("bg1");
+      s.removeClass("bg2");
+      s.removeClass("bg4");
+      s.removeClass("bg5");
+    }
+
+    else if (windowpos >= 1801 && windowpos <=2200) {
+      s.addClass("bg4");
+      $('h1').removeClass('showtext');
+
+      s.removeClass("bg1");
+      s.removeClass("bg2");
+      s.removeClass("bg3");
+      s.removeClass("bg5");
+    }
+
+    else if (windowpos >= 2200) {
+      s.addClass("bg5");
+
+      s.removeClass("bg1");
+      s.removeClass("bg2");
+      s.removeClass("bg3");
+      s.removeClass("bg4");
+    }
+
+    else {
+			s.removeClass("sticka");
+		}
+
+    console.log(windowpos)
+
+	});
+
+});
+
+
+
+</script>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+
+.bg1 {
+background-color:#00688B;
+transition:1s all ease;
+}
+
+.bg2 {
+background-color:#32CD32;
+transition:1s all ease;
+}
+
+.bg3 {
+background-color:yellow;
+transition:1s all ease;
+}
+
+.bg4 {
+background-color:blue;
+transition:1s all ease;
+}
+
+.bg5 {
+background-color:black;
+transition:1s all ease;
+}
+
+.border-me {
+border: 10px solid black;
+transition:1s all ease;
+}
+
+.turngreen {
+background-color:green;
+transition:2s all ease;
+}
+
+.bigbox {
+  width:40px;
+  height:1200px;
+    margin-top:20px;
+  margin-left:20px;
+  background-color:grey;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+        border-radius: 0px;
+}
+.bigbox:hover{
+  transition: 1s;
+  width: 200px;
+}
+.current {
+    background-color:yellow;
+    -webkit-transition: all 2s ease-in-out;
+-moz-transition: all 2s ease-in-out;
+-o-transition: all 2s ease-in-out;
+transition: all 2s ease-in-out;
+  width:420px;
+      border-radius: 100px;
+}
+
+h1 {
+  opacity:0;
+  text-align:center;
+  position:fixed;
+  font-size:100px;
+  padding-left:200px;
+  padding-right:200px;
+  color:white;
+  margin-top:100px;
+  transition:2s all ease;
+}
+
+.showtext {
+  opacity:1;
+  margin-top:0px;
+  transition:2s all ease;
+}
+
+.word{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 500px;
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: white;
+}
+
+.zoom{
+  font-family: 'K2D', sans-serif;
+  margin-left: 500px;
+  position: absolute;
+  font-size: 400px;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="zoom"> ZOOM </div>
+
+  <div id="menu">
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="word"> it's the year 3058 </div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+  </div>
+</body>
+</html>

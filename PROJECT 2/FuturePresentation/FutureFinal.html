@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>The New Zoom</title>
+
+<script>
+  $(document).ready(function() {
+
+    $(".clicktarget1").click(function() {
+      var href = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(href).offset().top
+      }, 800);
+    });
+
+  });
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Exo+2|Flamenco');
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+    padding: 0;
+    background-color: #a9abae;
+}
+
+.wrapper {
+  position:absolute;
+}
+
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #bcbec0;
+    z-index: 0;
+}
+
+.section2 {
+    width: 100vw;
+    height: 100.5vh;
+    position: relative;
+    background-color: #a9abae;
+    z-index: 0;
+}
+
+.navigation {
+    position: absolute;
+    z-index: 4;
+        width: 100vw;
+}
+
+.navh1, .navh1 a, .navh1 a:visited{
+  font-family:'Raleway', sans-serif;
+  font-size: 20px;
+  z-index: 3;
+  left: 2vw;
+  color: white;
+  letter-spacing: 5px;
+  text-decoration:none;
+  float: left;
+  margin-left: 80px;
+}
+
+.contactlens{
+  width: 40vw;
+  height: 50vh;
+  margin-top: 200px;
+  margin-left: 200px;
+  position: absolute;
+  z-index: 4;
+  background-image: url("images/contactlens.jpg");
+  background-size: cover;
+}
+
+.cart{
+  width: 4vw;
+  height: 6vh;
+  margin-left: 1450px;
+  margin-top: -7px;
+  background-image: url("images/cart-03.gif");
+  background-size: cover;
+  z-index: 4;
+  position: absolute;
+}
+
+.search{
+  width: 4vw;
+  height: 6vh;
+  margin-left: 1400px;
+  margin-top: -7px;
+  background-image: url("images/search-02.png");
+  background-size: cover;
+  z-index: 4;
+  position: absolute;
+}
+
+.bluebox {
+    width: 35vw;
+    height: 55vh;
+    left:45vw;
+    top: 110px;
+    background-color: #8da2d3;
+    position: absolute;
+    z-index: 1;
+}
+.box {
+    width: 35vw;
+    height: 55vh;
+    left:40vw;
+    top: 250px;
+    background-color: gray;
+    position: absolute;
+    z-index: 0;
+}
+
+.bluebox2 {
+    width: 35vw;
+    height: 830px;
+    left:45vw;
+    background-color: #8da2d3;
+    position: absolute;
+    z-index: 1;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-style: bold;
+  position: absolute;
+  z-index: 5;
+  left: 3vw;
+  margin-top: 350px;
+  margin-left: 650px;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.line {
+
+}
+.line:hover{
+
+}
+
+.eyediagram{
+  width: 35vw;
+  height: 35vh;
+  margin-left: 100px;
+  margin-top: 500px;
+  background-image: url("images/eyediagram.png");
+  background-size: cover;
+  z-index: 4;
+  position: absolute;
+}
+
+.eyewire{
+  width: 32vw;
+  height: 32vh;
+  margin-left: 130px;
+  margin-top: 100px;
+  background-image: url("images/contactwire.jpeg");
+  background-size: cover;
+  z-index: 5;
+  position: absolute;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  z-index: 6;
+  position: absolute;
+  font-weight: 300;
+  left: -1vw;
+  margin-top: 350px;
+}
+
+.head{
+  margin-left: 500px;
+  margin-top: 820px;
+  font-size: 30px;
+  z-index: 6;
+  position: absolute;
+}
+
+.text{
+  margin-left: 800px;
+  margin-top: 400px;
+  font-size: 30px;
+}
+
+.bluebox2 {
+    width: 40vw;
+    height: 45vh;
+    left:45vw;
+    top: 230px;
+    background-color: #8da2d3;
+    position: absolute;
+    z-index: 1;
+}
+.box2 {
+    width: 35vw;
+    height: 55vh;
+    left:60vw;
+    top: 190px;
+    background-color: gray;
+    position: absolute;
+    z-index: 0;
+}
+</style>
+
+<body>
+  <div class="navigation">
+<h1 class="navh1"><a href="FutureFinal.html">HOME</a></h1>
+<h1 class="navh1"><a class="clicktarget1" href="#gohere1">ABOUT</a></h1>
+  <h1 class="navh1"><a href="asd">CONTACT</a></h1>
+  <h1 class="navh1"><a href="asd">SUPPORT</a></h1>
+    <h1 class="navh1"><a href="asd">PRODUCTS</a></h1>
+  </div>
+
+  <h2>THE ZOOMO LENS</h2>
+  <div class="wrapper">
+    <a href="FutureFinal2.html"><div><div class="cart"></div></div></a>
+    <div class="search"></div>
+      <a href="FutureFinal2.html"><div></div></a>
+    </div>
+    <h3 class="head"> just with a pinch, see the world in a new persepctive</h3>
+    <div class="section1">
+        <div class="contactlens"></div>
+      <div class="bluebox"></div>
+      <div class="box"></div>
+    </div>
+    <div class="section2">
+      <div class="container" id="gohere1">
+      <div class="eyediagram"></div>
+      <div class="eyewire"></div>
+      <h3 class="text">Scientists and engineers have worked together <br> to enhance wiring
+         that can be safe and <br> comfortable to wear on eyes. </h3>
+         <div class="bluebox2"></div>
+         <div class="box2"></div>
+    </div></div>
+
+</body>
+</html>

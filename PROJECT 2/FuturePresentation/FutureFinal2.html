@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>error 404</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $(".clicktarget1").click(function() {
+        var href = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(href).offset().top
+        }, 800);
+      });
+
+    });
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Exo+2|Flamenco|Teko:700');
+
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #3b3b3c;
+    }
+
+    .wrapper {
+      position: absolute;
+    }
+
+    .section1 {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #7d7e81;
+      z-index: 0;
+    }
+
+    .section2 {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #58595b;
+      z-index: 0;
+    }
+
+    .section3 {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #3b3b3c;
+      z-index: 0;
+    }
+
+    .navigation {
+      position: absolute;
+      z-index: 4;
+      width: 100vw;
+    }
+
+    .navh1,
+    .navh1 a,
+    .navh1 a:visited {
+        font-family:'Raleway', sans-serif;
+        font-size: 20px;
+        z-index: 3;
+        left: 2vw;
+        color: white;
+        letter-spacing: 5px;
+        text-decoration:none;
+        float: left;
+        margin-right: 5px;
+        margin-left: 65px;
+      }
+
+    .contactlens {
+      width: 50vw;
+      height: 100vh;
+      margin-top: 40px;
+      margin-left: 350px;
+      position: absolute;
+      z-index: 4;
+      background-image: url("images/pinch1.png");
+      background-size: cover;
+    }
+
+    .contactlens:hover {
+      width: 40vw;
+      height: 85vh;
+      margin-top: 150px;
+      margin-left: 450px;
+      position: absolute;
+      z-index: 4;
+      background-image: url("images/pinch2.png");
+      background-size: cover;
+    }
+
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      position: absolute;
+      margin-left: 40px;
+      z-index: 5;
+      left: 2vw;
+      margin-top: 300px;
+      color: black;
+      letter-spacing: 5px;
+    }
+
+    .cart{
+      width: 4vw;
+      height: 6vh;
+      margin-left: 1450px;
+      margin-top: -7px;
+      background-image: url("images/cart-03.gif");
+      background-size: cover;
+      z-index: 4;
+      position: absolute;
+    }
+
+    .search{
+      width: 4vw;
+      height: 6vh;
+      margin-left: 1400px;
+      margin-top: -7px;
+      background-image: url("images/search-02.png");
+      background-size: cover;
+      z-index: 4;
+      position: absolute;
+    }
+
+    .upclose {
+      width: 50vw;
+      height: 70vh;
+      margin-left: 100px;
+      margin-top: 100px;
+      background-image: url("images/upclosepinch1.gif");
+      background-size: cover;
+      z-index: 5;
+      position: absolute;
+    }
+
+    .upclose2 {
+      width: 50vw;
+      height: 70vh;
+      margin-left: 300px;
+      margin-top: 100px;
+      background-image: url("images/upclosepinch1.gif");
+      background-size: cover;
+      z-index: 5;
+      position: absolute;
+    }
+
+    .upclose3 {
+      width: 50vw;
+      height: 70vh;
+      margin-left: 500px;
+      margin-top: 100px;
+      background-image: url("images/upclosepinch1.gif");
+      background-size: cover;
+      z-index: 5;
+      position: absolute;
+    }
+
+    .upclose4 {
+      width: 50vw;
+      height: 70vh;
+      margin-left: 700px;
+      margin-top: 100px;
+      background-image: url("images/upclosepinch1.gif");
+      background-size: cover;
+      z-index: 5;
+      position: absolute;
+    }
+
+    .zoom {
+      font-family: 'Teko', sans-serif;
+      position: absolute;
+      font-size: 200px;
+      margin-left: 350px;
+      margin-top: 300px;
+      letter-spacing: 5px;
+      color: white;
+      z-index: 6;
+    }
+
+    .sidepinch {
+      width: 20vw;
+      height: 50vh;
+      margin-left: 1300px;
+      margin-top: 510px;
+      background-image: url("images/sidepinch.gif");
+      background-size: cover;
+      z-index: 6;
+      position: absolute;
+    }
+
+    .warntext {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      color: red;
+      position: absolute;
+      z-index: 6;
+      margin-top: 100px;
+      text-align: center;
+      margin-top: 500px;
+      margin-left: 300px;
+    }
+
+    .warning {
+      font-family: 'Teko', sans-serif;
+      font-size: 200px;
+      color: red;
+      position: absolute;
+      z-index: 6;
+      margin-left: 450px;
+      margin-top: 250px;
+      letter-spacing: 10px;
+      text-align: center;
+      animation: flash 3s infinite alternate;
+    }
+    @keyframes flash {
+      0% {
+        color: red
+      }
+
+      100% {
+        color: #3b3b3c
+      }
+    }
+
+    .brainwash{
+      margin-left: 50px;
+      margin-top: 100px;
+    }
+
+  .brainwash2{
+    margin-top: 750px;
+    margin-left: 500px;
+  }
+  </style>
+
+<body>
+  <div class="navigation">
+    <h1 class="navh1"><a href="FutureFinal.html">HOME</a></h1>
+    <h1 class="navh1"><a class="clicktarget1" href="#gohere1">ABOUT</a></h1>
+    <h1 class="navh1"><a href="asd">CONTACT</a></h1>
+    <h1 class="navh1"><a href="asd">DON'T SUPPORT</a></h1>
+    <h1 class="navh1"><a href="asd">PRODUCTS</a></h1>
+    <h1 class="zoom">ZOOMO LENS</h1>
+  </div>
+  <div class="wrapper">
+    <a href="FutureFinal.html">
+      <div>
+        <div class="cart"></div>
+      </div>
+    </a>
+    <div class="search"></div>
+    <a href="FutureFinal.html">
+      <div></div>
+    </a>
+    <a href="FutureFinal.html">
+      <div></div>
+    </a>
+  </div>
+  <div class="section1">
+    <div class="contactlens"></div>
+  </div>
+  <div class="section2">
+    <div class="upclose"></div>
+    <div class="upclose2"></div>
+    <div class="upclose3"></div>
+    <div class="upclose4"></div>
+
+    <h2 class="brainwash">THEY ARE BRAINWASHING YOU <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br>
+     <h2 class="brainwash2"> THEY ARE BRAINWASHING YOU </h2>
+  </div>
+</div>
+
+  </div>
+  <div class="section3">
+    <div class="container" id="gohere1">
+      <div class="sidepinch"></div>
+      <div class="sidepinch2"></div>"
+      <h1 class="warning">WARNING
+    </div>
+    <h2 class="warntext"> The contact lens are not safe. <br>
+      It will suck you into a universe that is controlled by the government.
+      <br> There will be no privacy once you have possession of those contact lens. <br>
+      They are USING YOU.
+  </div>
+  </div>
+
+</body>
+
+</html>
