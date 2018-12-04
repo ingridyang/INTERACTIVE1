@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Outline Wireframe</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- JQUERY -->
+<script src="js/scroll.js"></script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .backgroundcolor {
+    background-color: #56a1c3;
+    width: 3000px;
+    height: 5850px;
+    position: absolute;
+  }
+
+  .bodytext1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 400px;
+  }
+
+  .bodytext2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 100px;
+    padding: 500px;
+  }
+
+  .bodytext3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 1600px;
+    padding: 700px585 margin-left: -100px;
+  }
+
+  .bodytext4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 2400px;
+    margin-left: 400px;
+  }
+
+  .bodytext5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 4200px;
+    margin-left: 80px;
+    padding: 400px;
+  }
+
+  .bodytext6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 5650px;
+    margin-left: 200px;
+  }
+
+  .parallax {
+    background-image: url("images/computerdesk2.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .girl {
+    background-image: url("images/girlback.png");
+    background-size: cover;
+    width: 70vw;
+    height: 90vh;
+    z-index: 1;
+    margin-left: 550px;
+    margin-top: 100px;
+    position: absolute;
+  }
+
+  .stephanie {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 300px;
+
+  }
+
+  .background {
+    width: 100vw;
+    height: 634vh;
+    position: absolute;
+    z-index: 1;
+    background-image: url("images/maze.png");
+    background-size: cover;
+  }
+
+  .corser {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 5px;
+    background-image: url("images/corser.png");
+    background-size: cover;
+    z-index: 3;
+  }
+
+  .corser2 {
+    width: 30vw;
+    height: 30vh;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 60px;
+    background-image: url("images/corser.png");
+    background-size: cover;
+    z-index: 3;
+  }
+
+  .boxstuff {
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 1100px;
+    margin-left: 650px;
+    background-image: url("images/girltext.png");
+    background-size: cover;
+  }
+
+  .boxstuff2 {
+    width: 30vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 1450px;
+    margin-left: 100px;
+    background-image: url("images/text.png");
+    background-size: cover;
+  }
+
+  .boxstuff3 {
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 2250px;
+    margin-left: 950px;
+    background-image: url("images/girlphone.png");
+    background-size: cover;
+  }
+
+  .boxstuff4 {
+    width: 60vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 2900px;
+    margin-left: 60px;
+    background-image: url("images/tvshow.png");
+    background-size: cover;
+  }
+
+  .boxstuff5 {
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 4000px;
+    margin-left: 400px;
+    background-image: url("images/girlchef.png");
+    background-size: cover;
+  }
+
+  .boxstuff6 {
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 4900px;
+    margin-left: 50px;
+    background-image: url("images/fpo.png");
+    background-size: cover;
+  }
+
+  .boxstuff7 {
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 5100px;
+    margin-left: 900px;
+    background-image: url("images/fpo.png");
+    background-size: cover;
+  }
+
+  .dog {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 100px;
+    margin-left: 150px;
+    background-image: url("images/dog.png");
+    background-size: cover;
+  }
+
+  .girly {
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 300px;
+    margin-left: 1200px;
+    background-image: url("images/girl.png");
+    background-size: cover;
+  }
+
+  .chatwindow {
+    position: fixed;
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    right: 0px;
+    z-index: 99;
+    transform: translate(200px, 0px);
+    transition: 1s ease;
+  }
+
+  .showchats {
+    transform: translate(0px, 0px);
+    transition: 1s ease;
+  }
+
+  .alert {
+    opacity: 0;
+    transition: 1s ease;
+  }
+
+  .showalert {
+    opacity: 1;
+    transition: .5s;
+  }
+</style>
+
+<body>
+
+  <div class="chatwindow">
+    <p class="alert1 alert">first thing that was tracked</p>
+    <p class="alert2 alert">first thing that was tracked</p>
+    <p class="alert3 alert">first thing that was tracked</p>
+  </div>
+
+  <h1 class="stephanie">Stephanie is enjoying her day <br> by watching
+    cute dog videos. </h1>
+  <div class="girl"></div>
+  <div class="parallax"></div>
+  <div class="backgroundcolor"></div>
+  <div class="background"></div>
+  <div class="corser"></div>
+  <div class="corser2"></div>
+  <div class="boxstuff"></div>
+  <div class="boxstuff2"></div>
+  <div class="boxstuff3"></div>
+  <div class="boxstuff4"></div>
+  <div class="boxstuff5"></div>
+  <div class="boxstuff6"></div>
+  <div class="boxstuff7"></div>
+  <div class="dog"></div>
+  <div class="girly"></div>
+  <h2 class="bodytext1">In the middle of her dog video binge, Stephanie hops on
+    to a website that sells matching dog and owner outfits.</div>
+    <h2 class="bodytext2">After an hour of online shopping, Stephanie gets a text from
+      her co-worker Kathy about up-coming tasks. </div>
+      <h2 class="bodytext4">Stephanie searches tv shows <br> to watch to pass the time. </div>
+        <h2 class="bodytext5">Stephanie Googles: hacks for making food fast.</div>
+          <h2 class="bodytext6">Stephanie has spent a total of
+            four hours on her phone today. </div>
+</body>
+
+</html>
