@@ -13,8 +13,10 @@
 
 <!-- JQUERY -->
 <script src="js/scroll.js"></script>
+<script src="js/random6.js"></script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Unlock');
   @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
   body {
@@ -28,6 +30,7 @@
     width: 3000px;
     height: 5850px;
     position: absolute;
+    z-index:-3;
   }
 
   .bodytext1 {
@@ -88,7 +91,7 @@
   }
 
   .parallax {
-    background-image: url("images/computerdesk2.jpg");
+    /* background-image: url("images/computerdesk2.jpg"); */
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -121,9 +124,10 @@
     width: 100vw;
     height: 634vh;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     background-image: url("images/maze.png");
     background-size: cover;
+
   }
 
   .corser {
@@ -150,13 +154,13 @@
   }
 
   .boxstuff {
-    width: 20vw;
-    height: 30vh;
+    width: 15vw;
+    height: 25vh;
     position: absolute;
     z-index: 4;
-    margin-top: 1100px;
+    margin-top: 1080px;
     margin-left: 650px;
-    background-image: url("images/girltext.png");
+    background-image: url("images/girltext.gif");
     background-size: cover;
   }
 
@@ -173,12 +177,12 @@
 
   .boxstuff3 {
     width: 30vw;
-    height: 40vh;
+    height: 50vh;
     position: absolute;
     z-index: 4;
-    margin-top: 2250px;
-    margin-left: 950px;
-    background-image: url("images/girlphone.png");
+    margin-top: 2180px;
+    margin-left: 900px;
+    background-image: url("images/girltv.gif");
     background-size: cover;
   }
 
@@ -194,24 +198,24 @@
   }
 
   .boxstuff5 {
-    width: 50vw;
-    height: 60vh;
+    width: 45vw;
+    height: 65vh;
     position: absolute;
     z-index: 4;
     margin-top: 4000px;
-    margin-left: 400px;
-    background-image: url("images/girlchef.png");
+    margin-left: 450px;
+    background-image: url("images/girlchef.gif");
     background-size: cover;
   }
 
   .boxstuff6 {
     width: 30vw;
-    height: 40vh;
+    height: 50vh;
     position: absolute;
     z-index: 4;
     margin-top: 4900px;
     margin-left: 50px;
-    background-image: url("images/fpo.png");
+    background-image: url("images/phone.png");
     background-size: cover;
   }
 
@@ -227,34 +231,37 @@
   }
 
   .dog {
-    width: 20vw;
-    height: 40vh;
-    position: absolute;
-    z-index: 4;
-    margin-top: 100px;
-    margin-left: 150px;
-    background-image: url("images/dog.png");
-    background-size: cover;
-  }
-
-  .girly {
     width: 30vw;
     height: 40vh;
     position: absolute;
     z-index: 4;
-    margin-top: 300px;
-    margin-left: 1200px;
-    background-image: url("images/girl.png");
+    margin-top: 60px;
+    margin-left: 150px;
+    background-image: url("images/dog.gif");
+    background-size: cover;
+  }
+
+  .girly {
+    width: 35vw;
+    height: 45vh;
+    position: absolute;
+    z-index: 4;
+    margin-top: 600px;
+    margin-left: 600px;
+    background-image: url("images/girl.gif");
     background-size: cover;
   }
 
   .chatwindow {
     position: fixed;
-    background-color: white;
+    font-family: 'VT323', monospace;
+    background-color: #cccccc;
     width: 200px;
     height: 100vh;
     right: 0px;
     z-index: 99;
+    padding-left: 30px;
+    padding-right: 30px;
     transform: translate(200px, 0px);
     transition: 1s ease;
   }
@@ -273,20 +280,43 @@
     opacity: 1;
     transition: .5s;
   }
+
+  .blocker {
+    width: 100vw;
+        background: linear-gradient(0deg, rgba(86,161,195,1) 36%, rgba(86,161,195,0) 100%);
+    height: 40vh;
+    position: fixed;
+    bottom:0px;
+}
 </style>
 
 <body>
-
+<div class="blocker"></div>
   <div class="chatwindow">
-    <p class="alert1 alert">first thing that was tracked</p>
-    <p class="alert2 alert">first thing that was tracked</p>
-    <p class="alert3 alert">first thing that was tracked</p>
+    <p class="alert1 alert"><b>FACEBOOK:</b> tracked word "dog"</p>
+    <p class="alert2 alert"><b>INSTAGRAM:</b> deteced the word "dog video" and saved into Julie's personal ad tab </p>
+    <p class="alert3 alert"><b>TWITTER:</b> spots Julie's YouTube search for "cute dog" </p>
+    <p class="alert4 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert5 alert"><b>TWITTER:</b> </p>
+    <p class="alert6 alert">INSTAGRAM:</b> </p>
+    <p class="alert7 alert">INSTAGRAM:</b> </p>
+    <p class="alert8 alert">INSTAGRAM:</b> </p>
+    <p class="alert9 alert">INSTAGRAM:</b> </p>
+    <p class="alert10 alert">INSTAGRAM:</b> </p>
+    <p class="alert11 alert">INSTAGRAM:</b> </p>
+    <p class="alert12 alert">INSTAGRAM:</b> </p>
+    <p class="alert13 alert">INSTAGRAM:</b> </p>
+    <p class="alert14 alert">INSTAGRAM:</b> </p>
+
+
+
   </div>
 
-  <h1 class="stephanie">Stephanie is enjoying her day <br> by watching
+  <h1 class="stephanie">Julie is enjoying her day <br> by watching
     cute dog videos. </h1>
   <div class="girl"></div>
   <div class="parallax"></div>
+
   <div class="backgroundcolor"></div>
   <div class="background"></div>
   <div class="corser"></div>
@@ -300,13 +330,13 @@
   <div class="boxstuff7"></div>
   <div class="dog"></div>
   <div class="girly"></div>
-  <h2 class="bodytext1">In the middle of her dog video binge, Stephanie hops on
+  <h2 class="bodytext1">In the middle of her dog video binge, Julie hops on
     to a website that sells matching dog and owner outfits.</div>
-    <h2 class="bodytext2">After an hour of online shopping, Stephanie gets a text from
+    <h2 class="bodytext2">After an hour of online shopping, Julie gets a text from
       her co-worker Kathy about up-coming tasks. </div>
-      <h2 class="bodytext4">Stephanie searches tv shows <br> to watch to pass the time. </div>
-        <h2 class="bodytext5">Stephanie Googles: hacks for making food fast.</div>
-          <h2 class="bodytext6">Stephanie has spent a total of
+      <h2 class="bodytext4">Julie searches tv shows <br> to watch to pass the time. </div>
+        <h2 class="bodytext5">Julie Googles: hacks for making food fast.</div>
+          <h2 class="bodytext6">Julie has spent a total of
             four hours on her phone today. </div>
 </body>
 
