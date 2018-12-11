@@ -28,7 +28,7 @@
   .backgroundcolor {
     background-color: #56a1c3;
     width: 3000px;
-    height: 5850px;
+    height: 6150px;
     position: absolute;
     z-index:-3;
   }
@@ -86,8 +86,10 @@
     font-size: 35px;
     z-index: 2;
     position: absolute;
-    margin-top: 5650px;
+    margin-top: 5800px;
     margin-left: 200px;
+    padding-left: 200px;
+    padding-right: 500px;
   }
 
   .parallax {
@@ -146,8 +148,8 @@
     height: 30vh;
     transform: rotate(180deg);
     position: absolute;
-    margin-top: 900px;
-    margin-left: 60px;
+    margin-top: 5500px;
+    margin-left: 530px;
     background-image: url("images/corser.png");
     background-size: cover;
     z-index: 3;
@@ -186,17 +188,6 @@
     background-size: cover;
   }
 
-  .boxstuff4 {
-    width: 60vw;
-    height: 40vh;
-    position: absolute;
-    z-index: 4;
-    margin-top: 2900px;
-    margin-left: 60px;
-    background-image: url("images/tvshow.png");
-    background-size: cover;
-  }
-
   .boxstuff5 {
     width: 45vw;
     height: 65vh;
@@ -226,7 +217,7 @@
     z-index: 4;
     margin-top: 5100px;
     margin-left: 900px;
-    background-image: url("images/fpo.png");
+    background-image: url("images/computer.gif");
     background-size: cover;
   }
 
@@ -255,15 +246,24 @@
   .chatwindow {
     position: fixed;
     font-family: 'VT323', monospace;
-    background-color: #cccccc;
+    border-top-left-radius: 20px;
+    background-color: #faebd7;
     width: 200px;
     height: 100vh;
     right: 0px;
     z-index: 99;
     padding-left: 30px;
     padding-right: 30px;
-    transform: translate(200px, 0px);
+    transform: translate(260px, 0px);
     transition: 1s ease;
+    animation-name: blink;
+    animation-duration: 3s;
+    overflow-y: scroll;
+  }
+
+  @keyframes blink{
+    0% {background-color: yellow}
+    100% {background-color: #faebd7}
   }
 
   .showchats {
@@ -279,6 +279,8 @@
   .showalert {
     opacity: 1;
     transition: .5s;
+    animation-name:flash;
+    animation-duration:1s;
   }
 
   .blocker {
@@ -287,7 +289,19 @@
     height: 40vh;
     position: fixed;
     bottom:0px;
-}
+    opacity: 0;
+    transition: 1s;
+    }
+  .showblocker {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  @keyframes flash {
+    0% {color:red;transform:scale(2)}
+    100%{color:black;transform:scale(1)}
+  }
+
 </style>
 
 <body>
@@ -296,17 +310,34 @@
     <p class="alert1 alert"><b>FACEBOOK:</b> tracked word "dog"</p>
     <p class="alert2 alert"><b>INSTAGRAM:</b> deteced the word "dog video" and saved into Julie's personal ad tab </p>
     <p class="alert3 alert"><b>TWITTER:</b> spots Julie's YouTube search for "cute dog" </p>
-    <p class="alert4 alert"><b>FACEBOOK:</b> </p>
-    <p class="alert5 alert"><b>TWITTER:</b> </p>
-    <p class="alert6 alert">INSTAGRAM:</b> </p>
-    <p class="alert7 alert">INSTAGRAM:</b> </p>
-    <p class="alert8 alert">INSTAGRAM:</b> </p>
-    <p class="alert9 alert">INSTAGRAM:</b> </p>
-    <p class="alert10 alert">INSTAGRAM:</b> </p>
-    <p class="alert11 alert">INSTAGRAM:</b> </p>
-    <p class="alert12 alert">INSTAGRAM:</b> </p>
-    <p class="alert13 alert">INSTAGRAM:</b> </p>
-    <p class="alert14 alert">INSTAGRAM:</b> </p>
+    <p class="alert4 alert"><b>FACEBOOK:</b> saves "matching outfits" into Julie's ad recommendation </p>
+    <p class="alert5 alert"><b>TWITTER:</b> avoids word tank top for Julie's preferences </p>
+    <p class="alert6 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert7 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert8 alert"><b>TWITTER:</b> </p>
+    <p class="alert9 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert10 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert11 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert12 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert13 alert"><b>TWITTER:</b> </p>
+    <p class="alert14 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert15 alert"><b>TWITTER:</b> </p>
+    <p class="alert16 alert"><b>TWITTER:</b> </p>
+    <p class="alert17 alert"><b>FACEBOOK</b> </p>
+    <p class="alert18 alert"><b>TWITTER:</b> </p>
+    <p class="alert19 alert"><b>INSTAGRAM</b> </p>
+    <p class="alert20 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert21 alert"><b>TWITTER:</b> </p>
+    <p class="alert22 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert23 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert24 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert25 alert"><b>TWITTER:</b> </p>
+    <p class="alert26 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert27 alert"><b>INSTAGRAM:</b> </p>
+    <p class="alert28 alert"><b>TWITTER:</b> </p>
+    <p class="alert29 alert"><b>FACEBOOK:</b> </p>
+    <p class="alert30 alert"><b>INSTAGRAM:</b> </p>
+
 
 
 
@@ -336,8 +367,8 @@
       her co-worker Kathy about up-coming tasks. </div>
       <h2 class="bodytext4">Julie searches tv shows <br> to watch to pass the time. </div>
         <h2 class="bodytext5">Julie Googles: hacks for making food fast.</div>
-          <h2 class="bodytext6">Julie has spent a total of
-            four hours on her phone today. </div>
+          <h2 class="bodytext6">Facebook, Twitter, and Instagram has saved
+            over 5,000,000,000 subjects into Julie's ad recommendation in the last 4 hours of her screen time. </div>
 </body>
 
 </html>
