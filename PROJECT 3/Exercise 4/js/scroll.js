@@ -17,10 +17,10 @@ $(document).ready(function() {
 
 
 
-    if (windowpos >= winheight) {
+    if (windowpos > winheight) {
       $('.chatwindow').addClass('showchats');
       $('.blocker').addClass('showblocker');
-    } else if (windowpos < winheight + 200) {
+    } else if (windowpos <= winheight) {
       $('.chatwindow').removeClass('showchats');
       $('.blocker').addClass('showblocker');
     }
@@ -203,12 +203,6 @@ $(document).ready(function() {
       $('.alert29').addClass('showalert');
     } else if (windowpos < 5500) {
       $('.alert29').removeClass('showalert');
-    }
-
-    if (windowpos >= 3300) {
-      $('.alert30').addClass('showalert');
-    } else if (windowpos < 3300) {
-      $('.alert30').removeClass('showalert');
     }
   console.log(windowpos)
 
