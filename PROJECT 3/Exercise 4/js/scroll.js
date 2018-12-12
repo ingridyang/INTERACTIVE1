@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (windowpos >= winheight) {
       $('.chatwindow').addClass('showchats');
       $('.blocker').addClass('showblocker');
-    } else if (windowpos < winheight) {
+    } else if (windowpos < winheight + 200) {
       $('.chatwindow').removeClass('showchats');
       $('.blocker').addClass('showblocker');
     }
